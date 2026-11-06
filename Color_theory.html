@@ -5,18 +5,55 @@
          <meta charset="UTF-8">
          <style>
                 body{
-                    color:beige;
-                    background-color: burlywood;
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    Background-color: #ffffff;
                 }
-                h1{
-                    text-align:center;
+
+                .box{
+                    width: 300px;
+                    height: 200px;
+                    font-weight: bold;
+                    border: 8px solid;
+                    box-sizing: border-box;
                 }
-         </style>
+
+
+                /* Analogous */
+                .analogous{
+                    background-color: rgb(25, 24, 109);
+                    color: rgb(59, 64, 128);
+                    border-color: rgb(80, 49, 116);
+                }
+
+                /* Complementary */
+                .complementary{
+                    background-color: rgb(240, 238, 141);
+                    color: rgb(180, 146, 219);
+                    border-color:  rgb(180, 146, 219);
+                }
+
+                /* Triadic */
+                .triadic{
+                    background-color: blue;
+                    color: red;
+                    border-color: yellow;
+                }
+            </style>
     </head>
     <body>
         <h1>Color Theory</h1>
-        <div class="boxes">
-        <h3>boxes:</h3>
-        <p>Hi</p>
+        
+        <div class="box analogous">
+            Analogous
+        </div>
+
+         <div class="box complementary">
+            Complementary
+        </div>
+
+        <div class="box triadic">
+            triadic
         </div>
     </body>
+    </html>
