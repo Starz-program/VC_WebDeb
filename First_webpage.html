@@ -9,12 +9,23 @@
         color:olive;
         background-color:rgb(216, 211, 183);
         border: inset 5px #3b5037;
+        font-family: 'comic sans', cursive;
+        font-weight: 100;
+        font-style: oblique;
+        margin-top: 25px;
+        padding: 25px;
+        
     }
     h1{
         text-align: center;
     }
     .images{
         width: 20%;
+    }
+    #pictures{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 5px;
     }
 </style>
     <body>
@@ -41,12 +52,16 @@
         <li>Deftones</li>
         <li>TV girl</li>
     </ul>
+    <div id="pictures">
+        <div id="pink">
      <img src="https://img.apmcdn.org/e6fc37d1f51ba0592c6d2d201d5cce49cba5301f/uncropped/60301b-20250908-pinkpantheress-performing-on-stage-webp1024.webp" class="images" alt="PinkPantheress concert">
     <p>Image from:<a href="https://www.carbonsound.fm/feature/2025/09/05/npr-pinkpantheress-tiny-desk-concert">CarbonSoundsFM</a></p>
+        </div>
+    <div id="def">
     <img src="https://images.squarespace-cdn.com/content/v1/568d709757eb8d614d0bb92c/1740774274594-3I1KE7ZQYPLJEL0IA3VE/Deftones62.JPG?format=750wt" class="images" alt="Deftones Concert">
     <p>Image from:<a href="https://www.concertupdater.com/deftones-2025">concertupdater</a></p>
+        </div>
     <p>Music generator:<a href="https://perchance.org/music-genre">music-genre</a></p>
+     </div>
     </body>
     </html>
-
-
