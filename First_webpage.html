@@ -63,5 +63,20 @@
         </div>
     <p>Music generator:<a href="https://perchance.org/music-genre">music-genre</a></p>
      </div>
+     <button id="info">Click me for more information!</button>
+     <p if="text">Show more</p>
+
+     <script>
+        function showInformation(){
+            let item=document.getElementById("info")
+            if(item.style.display == "flex"){
+                item.style.display = "none"
+                document.getElementById("text").innerHTML = "show more"
+            }else{
+                item.style.display="flex"
+                documnet.getElementById("text").innerHTML = "show less"
+            }
+        }
+     </script>
     </body>
     </html>

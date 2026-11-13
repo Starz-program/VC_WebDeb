@@ -72,7 +72,9 @@
             let images = ["link1", "link2", "link3","link"]
             let currentImage = 0
             function rotate(){
-                    if currentImage > 3 {currentImage = 0}
+                    if (currentImage > 3 ){
+                        currentImage = 0
+                    }
                     currentImage += 1
                     document.getElementById("timp").src = images[currentImage]
                     
