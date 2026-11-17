@@ -58,7 +58,7 @@
     </ul>
     <div id="pictures">
         <div id="pink">
-     <img src="https://img.apmcdn.org/e6fc37d1f51ba0592c6d2d201d5cce49cba5301f/uncropped/60301b-20250908-pinkpantheress-performing-on-stage-webp1024.webp" class="images" alt="PinkPantheress concert">
+     <img src="https://img.apmcdn.org/e6fc37d1f51ba0592c6d2d201d5cce49cba5301f/uncropped/60301b-20250908-pinkpantheress-performing-on-stage-webp1024.webp" class="images" alt="PinkPantheress concert" id="pink" onmouseout="rotate()">
     <p>Image from:<a href="https://www.carbonsound.fm/feature/2025/09/05/npr-pinkpantheress-tiny-desk-concert">CarbonSoundsFM</a></p>
         </div>
     <div id="def">
@@ -74,6 +74,17 @@
      </div>
 
      <script>
+            let images = ["https://press.300ent.com/sites/g/files/g2000015476/files/2025-06/PinkPantheress%20NA%20Tour%202025%20Admat.jpg", "https://img.apmcdn.org/e6fc37d1f51ba0592c6d2d201d5cce49cba5301f/uncropped/60301b-20250908-pinkpantheress-performing-on-stage-webp1024.webp"]
+            let currentImage = 0
+            function rotate(){
+                    if (currentImage > 1 ){
+                        currentImage = 0
+                    }
+                    currentImage += 1
+                    document.getElementById("Pink").src = images[currentImage]
+                }
+
+
         function showInformation(){
             let item=document.getElementById("Theinfo")
             if(item.style.display == "flex"){
@@ -84,6 +95,6 @@
                 document.getElementById("info").innerHTML = "show less"
             }
         }
-     </script>
+    </script>
     </body>
     </html>
