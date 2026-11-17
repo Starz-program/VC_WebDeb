@@ -6,8 +6,8 @@
     </head>
     <body>
         <h1>Name of website</h1>
-        <p>Paragraph tags are used to display mort of the text on the website.</p>
-        <p>We start new paragraph tag when we want a new paragraph on the page.<br> This way things are easy to read.</p>
+        <p><span id="important">Paragraph tags</span> are used to <span id="attention">display mort of the text on the website. </span></p>
+        <p>We start new paragraph tag when we want a new <span id="italics"> paragraph on the page.</span> <br> This way things are easy to read.</p>
     </body>
 </html>
 
@@ -40,6 +40,16 @@
             width: 50%;
             border-radius: 5px;
             background-color: rgb(43, 38, 30);
+        }
+        #important{
+            text-decoration: underline;
+            color: green;
+        }
+        #attention{
+            font-weight: bold;
+        }
+        #italics{
+            font-style: italic;
         }
 </style>
 <body>
