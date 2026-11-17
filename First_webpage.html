@@ -58,7 +58,7 @@
     </ul>
     <div id="pictures">
         <div id="pink">
-     <img src="https://img.apmcdn.org/e6fc37d1f51ba0592c6d2d201d5cce49cba5301f/uncropped/60301b-20250908-pinkpantheress-performing-on-stage-webp1024.webp" class="images" alt="PinkPantheress concert" id="pink" onmouseout="rotate()">
+     <img src="https://img.apmcdn.org/e6fc37d1f51ba0592c6d2d201d5cce49cba5301f/uncropped/60301b-20250908-pinkpantheress-performing-on-stage-webp1024.webp" class="images" alt="PinkPantheress concert" id="pinkImg" onmouseover="newImage()">
     <p>Image from:<a href="https://www.carbonsound.fm/feature/2025/09/05/npr-pinkpantheress-tiny-desk-concert">CarbonSoundsFM</a></p>
         </div>
     <div id="def">
@@ -67,34 +67,36 @@
         </div>
     <p>Music generator:<a href="https://perchance.org/music-genre">music-genre</a></p>
      </div>
-     <button id="info" onclick="showInformation()">Click me for more information!</button>
+     <button id="info" onclick="showInformation()" >Click me for more information!</button>
      <div id="Theinfo">
         <p>Music has been proven to have a very changing effect on the brain, making you more or less emotional depending on the music type. You can try this by putting on headphones, and putting a random playlist on shuffle to see how your mood changes. This can also explain that one song you continually skip everytime it plays, but still don't remove from the playlist. It has to do with the dopamine it had originally given you the first time you heard it, giving you a sensation for a feeling. Music is concidered an art by many accounts, one of them being the science side of interests, and others being the more entertainment side.</p>
         <img src="https://th.bing.com/th/id/OIP.AtEf8GYuzeBUukLN8SdGrAHaHa?w=163&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="vinyls.">
      </div>
 
      <script>
-            let images = ["https://press.300ent.com/sites/g/files/g2000015476/files/2025-06/PinkPantheress%20NA%20Tour%202025%20Admat.jpg", "https://img.apmcdn.org/e6fc37d1f51ba0592c6d2d201d5cce49cba5301f/uncropped/60301b-20250908-pinkpantheress-performing-on-stage-webp1024.webp"]
+         let images = ["https://img.apmcdn.org/e6fc37d1f51ba0592c6d2d201d5cce49cba5301f/uncropped/60301b-20250908-pinkpantheress-performing-on-stage-webp1024.webp","https://press.300ent.com/sites/g/files/g2000015476/files/2025-06/PinkPantheress%20NA%20Tour%202025%20Admat.jpg"]
             let currentImage = 0
-            function rotate(){
-                    if (currentImage > 1 ){
-                        currentImage = 0
-                    }
-                    currentImage += 1
-                    document.getElementById("Pink").src = images[currentImage]
+        function newImage(){
+                currentImage += 1
+                if (currentImage > 1 ){
+                    currentImage = 0
                 }
-
-
-        function showInformation(){
-            let item=document.getElementById("Theinfo")
-            if(item.style.display == "flex"){
-                item.style.display = "none"
-                document.getElementById("info").innerHTML = "show more"
-            }else{
-                item.style.display="flex"
-                document.getElementById("info").innerHTML = "show less"
+                document.getElementById("pinkImg").src = images[currentImage]
             }
-        }
+
+           
+            function showInformation(){
+                let item = document.getElementById("Theinfo")
+                if(item.style.display == "flex"){
+                    item.style.display = "none"
+                    document.getElementById("info").innerHTML = "show more"
+                }else{
+                    item.style.display="flex"
+                    document.getElementById("info").innerHTML = "show less"
+                }
+            }
+
+        
     </script>
     </body>
     </html>
