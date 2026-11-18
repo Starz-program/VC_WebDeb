@@ -19,4 +19,45 @@
     h1{
         text-align: center;
     }
+    .images{
+        width: 20%;
+    }
+    #pictures{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 5px;
+    }
     </style>
+    <body>
+        <h1>Saint George, Utah</h1>
+        <h3> Why is Saint George such a famous place to visit in Utah?</h3>
+        <p>Saint George, Utah, is a famous place to visit because of its beautiful red rock landscapes, warm weather, and many fun outdoor activities. It is surrounded by stunning natural scenery, including nearby attractions like Zion National Park and Snow Canyon State Park, where visitors can hike, explore, camp, and take amazing pictures. Saint George is also known for its golf courses, shopping, restaurants, and relaxing atmosphere. With its mix of adventure, natural beauty, and family-friendly activities, Saint George is a wonderful destination for people of all ages.</p>
+        
+        <h2> A list of reasons why you should visit.</h2>
+        <ul>
+            <li>Beautiful Scenery: Saint George has amazing red rock mountains, beautiful landscapes, and breathtaking views.</li>
+            <li>Outdoor Activities: Visitors can enjoy hiking, biking, camping, swimming, and exploring places like Zion National Park and Snow Canyon State Park.</li>
+            <li>Warm Weather: Saint George has lots of sunshine and warmer temperatures, making it a great place to visit and enjoy outdoor activities.</li>
+            <li>Fun for Everyone: There are plenty of restaurants, shops, golf courses, parks, and family-friendly activities for people of all ages.</li>
+        </ul>
+        <div id="pictures">
+            <div id="firstpic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1h3SEo52586cRt5x8Z3s_Cr26bn4hcgDYXoAhEUM4sw&s=10" class="images" alt="ST.George Mountains" id="stg" onmouseover="newImage()">
+                <p> Image from: <a href="https://www.visitutah.com/places-to-go/cities-and-towns/st-george"> UtahLifeElevated</a></p>
+            </div>
+            <div id="secondpic">
+                <img src="https://www.livelikeitstheweekend.com/wp-content/uploads/2018/02/STGeorge-1-of-1-13.jpg" class="images" alt="St.George bottom view">
+                <p> Image from:<a href="https://www.livelikeitstheweekend.com/best-things-to-do-st-george-zion/">livelikeitstheweekend</a></p>
+            </div>
+            <div id="thirdpic">
+                <img src="https://www.sltrib.com/resizer/v2/R3SBMF2DWJCQZKZMNNHUOPLJU4.jpg?auth=687b5a9a1b1a588b66c28bbad013434c9b972535a988c89d75d8dd4f1b6aa22f&width=1080&quality=88" class="images" alt="St.George top view">
+                <p> Image from: <a href="https://www.sltrib.com/news/business/2026/01/30/st-george-named-nations-top-best/">TheSaltLakeTribute</a></p>
+            </div>
+        </div>
+
+        <script> 
+            let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1h3SEo52586cRt5x8Z3s_Cr26bn4hcgDYXoAhEUM4sw&s=10",]
+
+        </script>
+    </body>
+    </html>
