@@ -20,12 +20,18 @@
         text-align: center;
     }
     .images{
-        width: 20%;
+        width: 50%;
     }
     #pictures{
          display: grid;
          grid-template-columns: 1fr 1fr;
          gap: 5px;
+    }
+    #Theinfo{
+        display: none;
+    }
+    #orange{
+        width: 50%;
     }
     </style>
     <body>
@@ -54,10 +60,33 @@
                 <p> Image from: <a href="https://www.sltrib.com/news/business/2026/01/30/st-george-named-nations-top-best/">TheSaltLakeTribute</a></p>
             </div>
         </div>
-
+        <button id="info" onclick="showInformation()">Click me for more information!</button>
+        <div id="Theinfo">
+            <p>Saint George, Utah, has a lot of cool history and hidden facts that most people don't know! Before it became a popular place to live and visit, it was settled in 1861 by Mormon pioneers who were sent there to grow cotton, earning it the nickname “Dixie.” One of the most interesting things is that Saint George is home to some of the oldest dinosaur tracks ever discovered, with fossilized footprints preserved in the rocks from millions of years ago. It is also surrounded by incredible red rock landscapes that look almost like they belong on another planet. Another surprising fact is that Saint George was once used as a filming location for old Western movies because of its desert scenery. It even has a historic building called the St. George Tabernacle, which was built in the 1800s and still stands today. With its dinosaur history, unique pioneer past, beautiful scenery, and connection to Hollywood, Saint George is much more interesting than just a sunny place to visit!</p>
+            <img src="https://jeffreyfavero.com/wp-content/uploads/2013/03/JFP-NSP-128.jpg" alt="desert" id="orange">
+        </div>
+    
         <script> 
-            let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1h3SEo52586cRt5x8Z3s_Cr26bn4hcgDYXoAhEUM4sw&s=10",]
+            let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1h3SEo52586cRt5x8Z3s_Cr26bn4hcgDYXoAhEUM4sw&s=10", "https://i0.wp.com/trekswithbeks.com/wp-content/uploads/2022/11/State-Parks-near-St-George-Sand-Hollow-Reservior-Treks-with-Beks.jpg?fit=750%2C1050&ssl=1"]
+                let currentImage = 0
+            function newImage(){
+                currentImage += 1
+                if (currentImage > 1){
+                    currentImage = 0
+                }
+                document.getElementById("stg").src = images[currentImage]
+            }
 
+            function showInformation(){
+               let item = document.getElementById("Theinfo")
+                if(item.style.display == "flex"){
+                    item.style.display = "none"
+                    document.getElementById("info").innerHTML = "show more"
+                }else{
+                    item.style.display="flex"
+                    document.getElementById("info").innerHTML = "show less"
+                } 
+            }
         </script>
     </body>
     </html>
